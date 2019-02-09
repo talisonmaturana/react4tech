@@ -109,6 +109,8 @@ export default class JobsManagement extends React.Component {
         <div className="row">
           {renderJobs}
         </div>
+
+        <p>{ navigator.onLine ? 'Online' : 'Offline' }</p>
       </div>
     )
   }
