@@ -55,7 +55,7 @@ export default class JobForm extends Component {
 
     console.log('did update - id: ' + this.props.editJobId);
     if (this.props.editJobId && !this.state.isEditing) {
-      axios.get('/jobs/' + this.props.editJobId)
+      axios.get('/jobs/' + this.props.editJobId, window.getAxiosConfig())
         .then(response => {
           this.setState({ newJob: response.data, isEditing: true });
         })

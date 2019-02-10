@@ -1,22 +1,24 @@
 import React from 'react';
+import './Loading.css';
 
-const loading = () => {
-    <div className="cssload-container">
-        <div className="cssload-circle-1">
-            <div className="cssload-circle-2">
-                <div className="cssload-circle-3">
-                    <div className="cssload-circle-4">
-                        <div className="cssload-circle-5">
-                            <div className="cssload-circle-6">
-                                <div className="cssload-circle-7">
-                                    <div className="cssload-circle-8">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+const loading = () => (
+    <div class="windows8">
+        <div class="wBall" id="wBall_1">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+            <div class="wInnerBall"></div>
         </div>
     </div>
-}
+)
+
+export default loading;
